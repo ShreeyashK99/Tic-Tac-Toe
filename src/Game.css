@@ -1,0 +1,46 @@
+/* Game.css */
+.game-container {
+  text-align: center;
+  margin-top: 50px; /* Add margin at the top to center the game */
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.board {
+  width: 360px;
+  height: 360px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+.cell {
+  background-color: #61dafb;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #5fa9e8;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: #61dafb;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5fa9e8;
+}
